@@ -44,7 +44,9 @@ const App = () => {
   return (
     <main className=" bg-gray-950 w-full h-screen flex items-center justify-center flex-col gap-4">
       {accordingData?.map((item, index) => (
-        <div className="w-[50%] border border-gray-500 rounded p-4" key={index}>
+        <div
+          className="w-full sm:w-[50%] border border-gray-500 rounded p-4"
+          key={index}>
           <div
             className={`${
               activeIndex === index ? " text-gray-300" : " text-gray-500"
